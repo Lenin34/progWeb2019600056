@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 01/04/25</title>
+    <script>
+        function demo() {
+            let arreglo = [1, '3', "2", true];
+            for (let i = 0; i < arreglo.length; i++) {
+                document.writeln(arreglo[i]);
+                console.log(arreglo[i]);
+            }
+            let arreglo2 = {entero:1,cadena1:'3',cadena2:"2",booleano:true};
+            document.writeln("<br>");
+            document.writeln(arreglo2.cadena1)
+        }
+    </script>
+</head>
+<-! Se ejecuta cuando se carga el documento con el onload,
+javascript entenderá las sumas de cadenas y las concatenará,
+en el segundo arreglo podemos observar que es un arreglo asociativo
+->
+<body onload = "demo()">
+
+</body>
+
+</html>
