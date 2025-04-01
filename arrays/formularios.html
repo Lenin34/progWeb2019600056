@@ -1,0 +1,33 @@
+<!--
+Hacer una interfaz donde el usuario capture su nombre y se le salude de manera personalizada
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function saludar() {
+            let nombre = document.getElementById("nombre").value;
+            alert("Hola, "+nombre);
+            console.log(nombre);
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="Dame tu nombre por favor">Dame tu nombre por favor</label>
+            <input type="text" id="nombre">
+            <br>
+            <button onclick="saludar();">Saludar</button>
+        </form>
+    </div>
+</body>
+
+</html>

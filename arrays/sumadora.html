@@ -1,0 +1,47 @@
+<!--
+Hacer una sumadora
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumadora</title>
+    <script>
+        function calcular() {
+            event.preventDefault();
+            let op1 = parseInt(document.getElementById("op1").value);
+            let op2 = parseInt(document.getElementById("op2").value);
+            let res = op1 + op2;
+            document.getElementById("resultado").value = res;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>op1</td>
+                <td>&nbsp;</td>
+                <td>op2</td>
+                <td>&nbsp;</td>
+                <td>res</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="op1"></td>
+                <td>+</td>
+                <td><input type="number" id="op2"></td>
+                <td>=</td>
+                <td><input disabled name="resultado" id="resultado"></td>
+            </tr>
+            <tr>
+                <td><button onclick="calcular();">Calcular</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
